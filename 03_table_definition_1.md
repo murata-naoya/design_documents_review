@@ -61,3 +61,24 @@
 - stockカラムの命名がカラム説明と合致していない
 - 支払い方法がのデータ型がstring型になっている。
 - payカラムの命名が適切でない。
+
+
+
+
+#レビュー
+
+#Users
+-郵便番号がinteger型
+-電話番号がinteger型
+-member_statusが何を意味しているか不明。
+-member_statusが何を意味しているか不明。
+
+
+
+#Songs
+-曲順を管理するカラムがない
+
+
+#Buy_details
+-buy numは意味不明。スネークケースになってない。
+
