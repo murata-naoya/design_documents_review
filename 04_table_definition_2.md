@@ -13,6 +13,7 @@
 
 ## ships
 - ship_name、ship_address、ship_tel、ship_codeカラムのそれぞれに「ship_」が付いている。
+- 主キーにINDEXが付与されていない。
 
 ## product
 - 在庫数カラムがある。
@@ -20,6 +21,7 @@
 
 ## discs
 - FK（外部キー）であるproducts_idカラムの命名が適切でない。
+- disc_numカラムの「disc_」が不要。
 
 ## songs
 - songカラムは曲名を表すため、命名が適切でない。
@@ -36,12 +38,12 @@
 ## cart items
 - テーブル名がスネークケースになっていない。
 - FK（外部キー）であるproducts_idカラムの命名が適切でない。
-- buy_numは購入枚数を表すため、命名が適切でない。
+- 「buy num」カラムが空白を含んでいる。
 
 ## sell_details
 - FK（外部キー）であるproducts_idカラムの命名が適切でない。
-- sell_numカラムは購入枚数を表すため、命名が適切でない。
 - 購入時価格を保持するカラムがない。
+- sellモデルのidを保持するカラムがない。
 
 ## sell
 - sellカラムは支払い方法を表すため、命名が適切でない。
